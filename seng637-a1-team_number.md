@@ -36,6 +36,21 @@ functional testing before this lab
 
 Text…
 
+| High level requirements                                           | User    |
+|------------------------------------------------------------------|---------|
+| Make cash withdrawal from any account, in multiples of 20        | Customer|
+| Deposit to any account                                            | Customer|
+| Transfer money between accounts linked to card                   | Customer|
+| Abort transaction in process by pressing cancel instead of responding | Customer|
+| Communicate transactions to bank and get bank verification        | ATM     |
+| For deposits, send confirmation to bank that envelope has been deposited | ATM     |
+| If pin is invalid after 3 attempts, card is retained by machine and account is locked | ATM     |
+| Display reasons for any failed transactions, prompt for another transaction | ATM     |
+| Provide receipt for successful transactions                       | ATM     |
+| Key-operated switch that allows operator to start and stop machine| ATM     |
+| When turned on prompts for total cash in machine                  | ATM     |
+| Logs transactions internally starting when ATM is started up. Never contains pin number. | ATM     |
+
 # Comparison of exploratory and manual functional testing
 
 Text…
