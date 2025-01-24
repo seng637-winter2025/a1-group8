@@ -34,7 +34,12 @@ functional testing before this lab
 
 # High-level description of the exploratory testing plan
 
-Text…
+## Test Types
+For the purpose of this report, only the exploratory test plan will be outlined in this section. In practice, the team will be using 3 types of testing: exploratory, manual scripted, and regression.
+
+## Exploratory Testing Scope
+
+For exploratory testing, the requirements from the table below will be tested. These high level requirements are defined in Appendix B, of the assignment 1 readme file.
 
 | High level requirements                                           | User    |
 |------------------------------------------------------------------|---------|
@@ -50,6 +55,19 @@ Text…
 | Key-operated switch that allows operator to start and stop machine| ATM     |
 | When turned on prompts for total cash in machine                  | ATM     |
 | Logs transactions internally starting when ATM is started up. Never contains pin number. | ATM     |
+
+Each of these requirements will be tested from the inital state of the ATM being turned on and idle. During the process of testing each requirement, any defects  that are found will be reported using Azure DevOps bug reporting feature. Each of the reported bugs will include the following details:
+ - Testing Type
+ - Function
+ - Software Version
+ - Severity of bug
+ - Initial system state
+ - Steps to reproduce defect
+ - Expected outcome and actual outcome
+
+## Exploratory Testing Logistics
+
+Text…
 
 # Comparison of exploratory and manual functional testing
 
