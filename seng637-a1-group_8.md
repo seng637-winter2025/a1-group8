@@ -67,7 +67,12 @@ Each of these requirements will be tested from the inital state of the ATM being
 
 ## Exploratory Testing Logistics
 
-Text…
+### Initial Program Exploration
+- To familiarize ourselves with the program as a whole, each student individually followed steps 1-12 in the 'Familiarization with the ATM System' subsection of the 'Instructions' section.
+
+### Pair Programming
+- For each of the high level functions listed above, one student attempted to complete the high level function as described, and the other student made notes of any bugs that were encountered, paying careful attention to details like display, log, and state information.
+
 
 # Comparison of exploratory and manual functional testing
 
