@@ -32,7 +32,7 @@
 An introduction of your lab work, and what you knew about exploratory and manual
 functional testing before this lab
 
-# High-level description of the exploratory testing plan
+# High-Level Testing Plan
 
 ## Test Types
 For the purpose of this report, only the exploratory test plan will be outlined in this section. In practice, the team will be using 3 types of testing: exploratory, manual scripted, and regression.
