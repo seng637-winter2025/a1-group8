@@ -13,33 +13,38 @@
 (When you finish writing, update the following list using right click, then
 “Update Field”)
 
-[1 Introduction	1](#introduction)
+[1 Introduction](#introduction)
 
-[2 High-level description of the exploratory testing plan	1](<#high-level-description-of-the-exploratory-testing-plan>)
+[2 High-Level Testing Plan](<#high-level-testing-plan>)
 
-[3 Comparison of exploratory and manual functional testing	1](#comparison-of-exploratory-and-manual-functional-testing)
+[3 Comparison of exploratory and manual functional testing](#comparison-of-exploratory-and-manual-functional-testing)
 
-[4 Notes and discussion of the peer reviews of defect reports	1](#notes-and-discussion-of-the-peer-reviews-of-defect-reports)
+[4 Notes and discussion of the peer reviews of defect reports](#notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
-[5 How the pair testing was managed and team work/effort was divided	1](#how-the-pair-testing-was-managed-and-team-workeffort-was-divided)
+[5 How the pair testing was managed and team work/effort was divided](#how-the-pair-testing-was-managed-and-team-workeffort-was-divided)
 
-[6 Difficulties encountered, challenges overcome, and lessons learned	1](#difficulties-encountered-challenges-overcome-and-lessons-learned)
+[6 Difficulties encountered, challenges overcome, and lessons learned](#difficulties-encountered-challenges-overcome-and-lessons-learned)
 
-[7 Comments/feedback on the lab and lab document itself	1](#commentsfeedback-on-the-lab-and-lab-document-itself)
+[7 Comments/feedback on the lab and lab document itself](#commentsfeedback-on-the-lab-and-lab-document-itself)
 
 # Introduction
 
-An introduction of your lab work, and what you knew about exploratory and manual
-functional testing before this lab
+In this lab, our group will be conducting software testing on an ATM simulation system using exploratory, manual function, and regression testing methods. Azure DevOps was the issue tracking system used to create and update bug work items and to generate the final bug report after the testing was completed. Prior to this lab, both group members had some experience with exploratory testing for checking high-level software requirements.
 
 # High-Level Testing Plan
 
 ## Test Types
-For the purpose of this report, only the exploratory test plan will be outlined in this section. In practice, the team will be using 3 types of testing: exploratory, manual scripted, and regression.
 
-## Exploratory Testing Scope
+To test the SUT, three types of testing will be used:
+ - Exploratory testing
+ - Manual Function testing
+ - Regression testing
 
-For exploratory testing, the requirements from the table below will be tested. These high level requirements are defined in Appendix B, of the assignment 1 readme file.
+Each of these test types, provide a slightly different approach to detecting defects in the system under test (SUT). Exploratory testing will address the requirement given in appendix B at a high-level. Manual function testing will be completed using the test suite in appendix C and is a methodical approach to testing the software. Regression testing will be preformed only on updated version 1.1, to verify whether identified bugs have been resolved and to find if any new bugs have been created.
+
+## Testing Scope
+
+For exploratory testing, the requirements from the table below will be tested. These high level requirements are defined in appendix B, of the assignment 1 readme file.
 
 | High level requirements                                           | User    |
 |------------------------------------------------------------------|---------|
@@ -56,7 +61,7 @@ For exploratory testing, the requirements from the table below will be tested. T
 | When turned on prompts for total cash in machine                  | ATM     |
 | Logs transactions internally starting when ATM is started up. Never contains pin number. | ATM     |
 
-Each of these requirements will be tested from the inital state of the ATM being turned on and idle. During the process of testing each requirement, any defects  that are found will be reported using Azure DevOps bug reporting feature. Each of the reported bugs will include the following details:
+Each of these requirements will be tested from the inital state of the ATM being turned on and idle. During the process of testing each requirement, any defects that are found will be reported using Azure DevOps bug reporting feature. Each of the reported bugs will include the following details:
  - Testing Type
  - Function
  - Software Version
@@ -65,21 +70,29 @@ Each of these requirements will be tested from the inital state of the ATM being
  - Steps to reproduce defect
  - Expected outcome and actual outcome
 
-## Exploratory Testing Logistics
+Manual function testing will be conducted after the exploratory testing phase is complete. The test suite from appendix C will be used. New bugs will be tracked in the system, making note that the bug is found using  MFT. Any bugs that had already been tracking in the exploratory phase will not be duplicated, but a note will be added that the bug was also found using MFT. The reported bugs will contain the same details as in the exploratory testing phase.
+
+Regression testing will be the final step in the testing process. Using version 1.1, each of the identified bugs from the exploratory testing and MFT will be re-run. If the bug has been corrected, then the bug status will be changed to 'Resolved'. If the bug still exists, then the bug status will be changed to 'Active' and V1.1 will be appended to the software version. Once this is done, the testing will be redone on the remaining test cases from the test suite in appendix C to identify any new bugs and will be reported with the same details as the previous bugs.
+
+## Testing Logistics
 
 ### Initial Program Exploration
-- To familiarize ourselves with the program as a whole, each student individually followed steps 1-12 in the 'Familiarization with the ATM System' subsection of the 'Instructions' section.
+To familiarize ourselves with the program as a whole, each student individually followed steps 1-12 in the 'Familiarization with the ATM System' subsection of the 'Instructions' section. New bugs will be reported in the Azure DevOps system.
 
 ### Pair Programming
-- For each of the high level functions listed above, one student attempted to complete the high level function as described, and the other student made notes of any bugs that were encountered, paying careful attention to details like display, log, and state information.
+For each of the high level functions listed above, one student attempted to complete the high level function as described, and the other student made notes of any bugs that were encountered, paying careful attention to details like display, log, and state information.
 
+### Manual Function Testing
+ To conduct the manual function testing, each student was assigned 20 tests from the test suite in appendix C to drive the testing, while the other student kept track of the preformed tests and created reports for any bugs found. The execution order of the tests was done in order of the test cases 1 - 40.
+
+### Regression Testing
+ For the last phase of testing, each student ran version 1.1 of the SUT and the existing bug reports were split between the students to review and update. When redoing the manual function testing, each student conducted 20 tests. Student 1 did test cases 1-20, and student 2 did test cases 21-40. New bugs were reported by the student that found them.
 
 # Comparison of exploratory and manual functional testing
 
-Text…
+As a team, we found 12 bugs in the ATM software. 5 of them were found in using exploratory testing, and the remainder were found using manual function testing. Most of the bugs found in the exploratory testing were also found when doing manual function testing.
 
--   Note that you need to submit a report generated by your defect tracking
-    system, containing all defects recorded in the system.
+Both methods were useful in identifying defects in the software. Manual function testing was more time consuming but was valuable in detecting additional bugs that were missed in the exploratory phase. For our group, the manual function testing was the most effective approach. Exploratory testing still is a worthwhile method to use, as it can find bugs that may not arise when strictly sticting to a test suite that focuses on function requirements.
 
 # Notes and discussion of the peer reviews of defect reports
 
@@ -87,7 +100,7 @@ Text…
 
 # How the pair testing was managed and team work/effort was divided 
 
-Text…
+Covered in the testing plan.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
