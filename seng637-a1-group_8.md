@@ -87,7 +87,7 @@ For each of the high level functions listed above, one student attempted to comp
 
 As a team, we found 12 bugs in the ATM software. 5 of them were found in using exploratory testing, and the remainder were found using manual function testing. Most of the bugs found in the exploratory testing were also found when doing manual function testing.
 
-Both methods were useful in identifying defects in the software. Manual function testing was more time consuming but was valuable in detecting additional bugs that were missed in the exploratory phase. For our group, the manual function testing was the most effective approach. Exploratory testing still is a worthwhile method to use, as it can find bugs that may not arise when strictly sticting to a test suite that focuses on function requirements. The table below outlines some of the differences between the testing types.
+Both methods were useful in identifying defects in the software. Manual function testing was more time consuming but was valuable in detecting additional bugs that were missed in the exploratory phase. For our group, the manual function testing was the most effective approach. Exploratory testing still is a worthwhile method to use, as it can find bugs that may not arise when strictly following a test suite that focuses on function requirements. The table below outlines some of the differences between the testing types.
 
 ### Comparison Table
 |          | Exploratory Testing                                  | Manual Functional Testing                                  |
@@ -110,10 +110,10 @@ Peer reviews created the following benefits when reviewing the defect reports:
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-The group has intially set out to use Jira as the issue tracking system but ran into hurdles when creating the organization and found the bug reports to lack the information we needed to capture. To avoid these issues, we switched to Azure DevOps and found the overall experience better suited to this assignment. In the future, Azure DevOps would be our preferred method for issue tracking.
+The group initially set out to use Jira as the issue tracking system but ran into hurdles when creating the organization and found the bug reports to lack the information we needed to capture. To avoid these issues, we switched to Azure DevOps and found the overall experience better suited to this assignment. In the future, Azure DevOps would be our preferred method for issue tracking.
 
 When creating the first defect reports, we did not have a clear method for how to capture all of the details needed for the reports. The peer review was helpful in identifying initial gaps and setting a standard for the reports going forward. If this was not done, there may have been additional work on the back end to standardize the reports. 
 
 # Comments/feedback on the lab and lab document itself
 
-Overall, the assignment was a good introduction to testing and learning how to use an issue tracking system was valuable. It was clear from the lab how much work can be involved in testing even a simple software progam. The lab document had detailed instructions and expectations for learning goals. It also had a clear marking rubric that assisted in completing the submission documents.
+Overall, the assignment was a good introduction to testing and learning how to use an issue tracking system was valuable. It was clear from the lab how much work can be involved in testing even a simple software program. The lab document had detailed instructions and expectations for learning goals. It also had a clear marking rubric that assisted in completing the submission documents.
